@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+  <head>
+    <title>Business Website</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Header Section -->
+    <header>
+        
+      <h1>Welcome to Our Business Website</h1>
+      <p>We offer a wide range of products and services to help you grow your business.</p>
+      <button>Contact Us</button>
+    </header>
+    
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Website Design and Development</li>
+        <li>Search Engine Optimization</li>
+        <li>Social Media Marketing</li>
+        <li>Email Marketing</li>
+        <li>Content Writing and Marketing</li>
+        <li>Graphic Design</li>
+      </ul>
+    </section>
+    
+    <!-- About Us Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a team of experienced professionals who are dedicated to helping our clients succeed in their businesses.</p>
+      <p>Our mission is to provide high-quality services at affordable prices.</p>
+    </section>
+    
+    <!-- Contact Us Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br>
+        <button>Submit</button>
+      </form>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2023 Business Website. All rights reserved.</p>
+    </footer>
+    
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+document.addEventListener("mousemove",function(e){
+    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX 
+    + "px; top: " + e.clientY + "px;";
+});
+</script>
+  </body>
+</html>
